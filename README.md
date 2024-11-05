@@ -82,11 +82,12 @@ INSERT INTO products (product_id, product_name, category_id) VALUES
 ```
 
 ## Q1: Retrieve all employees with a salary greater than 50,000.
+```sql
 SELECT * FROM employees
 WHERE salary>50000;
 ```
 ### Output of Q1
-(https://github.com/user-attachments/assets/6dae2483-ee24-4267-95ec-fd36b5c07c32)
+![1](https://github.com/user-attachments/assets/6dae2483-ee24-4267-95ec-fd36b5c07c32)
 
 ## Q2: Retrieve all customers whose names start with 'A'.
 ```sql
@@ -94,7 +95,7 @@ SELECT * FROM customers
 WHERE name LIKE 'A%';
 ```
 ### Output of Q2
-(https://github.com/user-attachments/assets/0b7f3b90-845f-425e-8d98-ae59d4b96427)
+![2](https://github.com/user-attachments/assets/0b7f3b90-845f-425e-8d98-ae59d4b96427)
 
 ## Q3: Group employees by department and calculate the average salary.
 ```sql
@@ -103,7 +104,7 @@ FROM employees
 GROUP BY department_id;
 ```
 ### Output of Q3
-(https://github.com/user-attachments/assets/4518b128-a5c5-4ef9-8861-26ef5021b889)
+![3](https://github.com/user-attachments/assets/4518b128-a5c5-4ef9-8861-26ef5021b889)
 
 ## Q4: Retrieve departments with an average salary greater than 60,000.
 ```sql
@@ -113,7 +114,7 @@ GROUP BY department_id
 HAVING AVG(salary) > 60000;
 ```
 ### Output of Q4
-(https://github.com/user-attachments/assets/1b1d3598-a6dc-47ae-a3c8-9a10f8bddea3)
+![4](https://github.com/user-attachments/assets/1b1d3598-a6dc-47ae-a3c8-9a10f8bddea3)
 
 ## Q5: Retrieve all orders placed by customers with IDs 1, 2, and 3.
 ```sql
@@ -121,7 +122,7 @@ SELECT * FROM orders
 WHERE customer_id IN (1, 2, 3);
 ```
 ### Output of Q5
-(https://github.com/user-attachments/assets/b3a9c3d6-26aa-4d70-97c6-2ff733a53797)
+![5](https://github.com/user-attachments/assets/b3a9c3d6-26aa-4d70-97c6-2ff733a53797)
 
 ## Q6: Retrieve all products that are not in categories 1, 2, and 3
 ```sql
@@ -129,7 +130,7 @@ SELECT * FROM products
 WHERE category_id NOT IN (1, 2, 3);
 ```
 ### Output of Q6
-(https://github.com/user-attachments/assets/1d59f13b-357e-473e-95c7-c1842251629b)
+![6](https://github.com/user-attachments/assets/1d59f13b-357e-473e-95c7-c1842251629b)
 
 ## Q7: Retrieve all employees who work in a department with more than 10 employees.
 ```sql
@@ -142,4 +143,4 @@ WHERE department_id IN (
 );
 ```
 ### Output of Q7
-(https://github.com/user-attachments/assets/83b1d178-3b9d-43ff-ab7e-7ef7cc918b55)
+![7](https://github.com/user-attachments/assets/83b1d178-3b9d-43ff-ab7e-7ef7cc918b55)
